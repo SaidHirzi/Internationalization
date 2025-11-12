@@ -8,6 +8,12 @@ const dictionary = {
     home: "Home",
     about: "About Us",
   },
+  language_switcher: {
+    label: "Change Language",
+    id: "Indonesian",
+    en: "English",
+    jp: "Japanese",
+  },
 };
 
 export default dictionary;

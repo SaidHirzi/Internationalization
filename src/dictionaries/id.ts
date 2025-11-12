@@ -8,6 +8,12 @@ const dictionary = {
     home: "Beranda",
     about: "Tentang Kami",
   },
+  language_switcher: {
+    label: "Ganti Bahasa",
+    id: "Indonesia",
+    en: "Inggris",
+
+  },
 };
 
 export default dictionary;

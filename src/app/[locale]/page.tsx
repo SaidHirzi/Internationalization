@@ -1,6 +1,7 @@
 // app/[locale]/page.tsx
 import { getDictionary } from "@/lib/dictionary";
 import { Locale } from "@/i18n.config";
+import LanguageSwitcher from "@/components/switcher/languengeSwitcher";
 
 export default async function Home({
   params,
@@ -15,15 +16,13 @@ export default async function Home({
 
   return (
     <main>
-      <h1>{dict.homepage.title}</h1>
-      <p>{dict.homepage.description}</p>
-
-      <h2>{dict.navigation.home}</h2>
-
-      <nav>
-        {/* Contoh link (kita akan bahas language switcher nanti) */}
-        <a href={`/${locale}/about`}>{dict.navigation.about}</a>
-      </nav>
+      <div>
+        <LanguageSwitcher locale={locale} dict={dict.language_switcher} />
+      </div>
+      <div>
+        <h1>{dict.homepage.title}</h1>
+        <p>{dict.homepage.description}</p>
+      </div>
     </main>
   );
 }
